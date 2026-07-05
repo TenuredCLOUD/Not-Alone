@@ -1,0 +1,178 @@
+﻿onLoadName = "Not Alone";
+author = "TenuredCLOUD";
+
+overviewPicture = "";
+loadScreen = "titleimages\TBR.jpg";
+briefing = 0;
+
+corpseManagerMode = 1;
+corpseLimit = 0;
+corpseRemovalMinTime = 900;
+corpseRemovalMaxTime = 1200;
+minPlayerDistance = 350;
+
+cba_settings_hasSettingsFile = 1;
+
+#include "modules\grad-fortifications\grad_fortifications.hpp"
+
+class RscTitles {
+    #include "modules\grad-fortifications\dialog\hint\title.hpp"
+};
+
+class CfgFunctions {
+    #include "modules\grad-persistence\cfgFunctions.hpp"
+    #include "modules\grad-fortifications\cfgFunctions.hpp"
+    #include "furniture\func.hpp"
+};
+
+class Extended_PreInit_EventHandlers {
+    class tinter_furniture_pre_init {
+        init = "call compile preprocessFileLineNumbers 'furniture\XEH_preInit.sqf'";
+    };
+};
+
+class Extended_PostInit_EventHandlers {
+    class tbr_post_init {
+        clientInit = "call compile preprocessFileLineNumbers 'functions\XEH_clientInit.sqf'";
+        serverInit = "call compile preprocessFileLineNumbers 'functions\XEH_serverInit.sqf'";
+    };
+};
+
+class CfgGradPersistence {
+    missionTag = "Not Alone";
+	loadOnMissionStart = 1;
+    missionWaitCondition = "true";
+	playerWaitCondition = "true";
+    saveUnits = 1;
+    saveVehicles = 1; //DO NOT CHANGE FROM 1
+    saveContainers = 3; //Originally 1 // 3 for GRAD fortifications --DO NOT CHANGE--
+    saveStatics = 3; //Originally 1 // 3 for GRAD fortifications --DO NOT CHANGE--
+    saveMarkers = 0;
+    saveTasks = 0;
+    saveTriggers = 0;
+    saveTimeAndDate	= 1;	//0/1 - Toggles saving of time and date.
+	savePlayerInventory = 0; //Originally 0;
+    savePlayerDamage = 0; //Leave as 1 for ACe medical;
+    savePlayerPosition = 0; // Will reload players position on reload default 0;
+    savePlayerMoney = 0; //Utilize a 1; for GRAD moneymenu / Buymenu
+    saveTeamAccounts = 0;
+	saveGradFortificationsStatics = 3; //GRAD fortifications saver for world state --DO NOT CHANGE--
+
+    blacklist[] = {};
+
+    class customVariables {
+        class ACE_VehicleLock_SetVehicleLock {
+            varName = "ace_vehicleLock_setVehicleLock";
+            varNamespace = "vehicle";
+            public = 1;
+        };
+
+        class traderStates {
+            varName = "misery_traders_shop";
+            varNamespace = "unit";
+            public = 1;
+        };
+
+        class buildingStates {
+            varName = "misery_doorlocks_buildingStates";
+            varNamespace = "mission";
+            public = 1;
+        };
+
+        class gradFortificationsVehicleInventory {
+            varName = "grad_fortifications_myForHash";
+            varNamespace = "vehicle";
+            public = 1;
+        };
+
+        class gradFortificationsContainerInventory {
+            varName = "grad_fortifications_myForHash";
+            varNamespace = "container";
+            public = 1;
+        };
+
+        class gradFortificationsPlayerInventory {
+            varName = "grad_fortifications_myForHash";
+            varNamespace = "player";
+            public = 1;
+        };
+
+        class gradFortificationsUnitInventory {
+            varName = "grad_fortifications_myForHash";
+            varNamespace = "unit";
+            public = 1;
+        };
+
+        class vehicleBatteryCount {
+            varName = "misery_maintenance_batteryCount";
+            varNamespace = "vehicle";
+            public = 1;
+        };
+
+        class vehicleBatteryType {
+            varName = "misery_maintenance_batteryType";
+            varNamespace = "vehicle";
+            public = 1;
+        };
+
+        class vehicleInstalledBatteries {
+            varName = "misery_maintenance_installedBatteries";
+            varNamespace = "vehicle";
+            public = 1;
+        };
+
+        class vehicleBatteryLevel {
+            varName = "misery_maintenance_batteryLevel";
+            varNamespace = "vehicle";
+            public = 1;
+        };
+
+        class vehicleOilLevel {
+            varName = "misery_maintenance_oilLevel";
+            varNamespace = "vehicle";
+            public = 1;
+        };
+
+        class vehicleCoolantLevel {
+            varName = "misery_maintenance_coolantLevel";
+            varNamespace = "vehicle";
+            public = 1;
+        };
+
+        class deviceStates {
+            varName = "misery_power_deviceStates";
+            varNamespace = "mission";
+            public = 1;
+        };
+
+        class cargoStates {
+            varName = "misery_persistence_cargoStates";
+            varNamespace = "mission";
+            public = 1;
+        };
+
+        class fuelPumpStates {
+            varName = "misery_fuel_pumpStates";
+            varNamespace = "mission";
+            public = 1;
+        };
+	};
+};
+
+#include "modules\grad-fortifications\description\CfgGRADFortData.hpp"
+
+#include "description\CfgMiseryRadioData.hpp"
+#include "description\CfgMiseryCraftingData.hpp"
+#include "description\CfgMiseryCookingData.hpp"
+#include "description\CfgMiseryHydrologyData.hpp"
+#include "description\CfgMiseryForgeData.hpp"
+#include "description\CfgMiseryAnvilData.hpp"
+#include "description\CfgMiseryInteractionData.hpp"
+#include "description\CfgMiseryBuffAilmentData.hpp"
+#include "description\CfgMiseryTraderData.hpp"
+#include "description\CfgMiseryLootData.hpp"
+#include "description\CfgMiserySearchableData.hpp"
+#include "description\CfgMiseryPOIData.hpp"
+#include "description\CfgMiseryMiningData.hpp"
+//#include "description\CfgMiseryTemperatureData.hpp"
+#include "description\CfgMiseryGearData.hpp"
