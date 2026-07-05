@@ -1,6 +1,6 @@
 This is the official repository for my scenario "Not Alone" that is on the Steam workshop, it can be found here:
 
-<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1732659749">Not Alone</a>
+<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1446397227">Not Alone</a>
 
 All wars are over, the last world war took place across the globe in a desperate attempt to stop the White Plague, ending in vain, and now the world lies in ruin.
 
