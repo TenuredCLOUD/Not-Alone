@@ -21,10 +21,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={10450.64,11.833758,2364.3455};
-		dir[]={-0.31717452,-0.34404311,-0.8837623};
-		up[]={-0.11621616,0.93895352,-0.32382011};
-		aside[]={-0.9412201,1.2107193e-08,0.33779544};
+		pos[]={1820.6685,9.7107038,2191.3635};
+		dir[]={0.9245708,-0.37915319,-0.03757526};
+		up[]={0.37884051,0.92533392,-0.015396366};
+		aside[]={-0.040607244,9.3132257e-10,-0.99917531};
 	};
 };
 binarizationWanted=0;
@@ -1453,15 +1453,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1820.7919,8.041069,2188.7749};
-						angles[]={0,5.8154736,0};
+						position[]={1820.792,8.0412836,2188.7751};
+						angles[]={0,5.8154716,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
 						skill=1;
-						init="[this, this] call ace_common_fnc_claim;" \n "" \n "";
+						init="[this, this] call ace_common_fnc_claim;" \n "" \n "[this, ""Weapons""] call misery_traders_fnc_generateShop;" \n "";
 						name="kamenka_5";
 						ignoreByDynSimulGrid=1;
 						class Inventory
@@ -1481,6 +1481,7 @@ class Mission
 					};
 					id=9;
 					type="B_Survivor_F";
+					atlOffset=0.00021457672;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1532,6 +1533,7 @@ class Mission
 				dynamicSimulation=1;
 			};
 			id=8;
+			atlOffset=0.00021457672;
 		};
 		class Item6
 		{
@@ -1583,15 +1585,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1822.5054,8.041069,2189.4456};
-						angles[]={0,5.9355345,0};
+						position[]={1822.505,8.0410633,2189.446};
+						angles[]={0,5.935533,0};
 					};
 					side="West";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						skill=1;
-						init="[this, this] call ace_common_fnc_claim;" \n "" \n "";
+						init="[this, this] call ace_common_fnc_claim;" \n "" \n "[this, ""Gear""] call misery_traders_fnc_generateShop;" \n "";
 						name="kamenka_3";
 						ignoreByDynSimulGrid=1;
 						class Inventory
@@ -1611,6 +1613,7 @@ class Mission
 					};
 					id=13;
 					type="B_Survivor_F";
+					atlOffset=2.178;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1662,6 +1665,7 @@ class Mission
 				dynamicSimulation=1;
 			};
 			id=12;
+			atlOffset=2.178;
 		};
 		class Item9
 		{
@@ -10640,15 +10644,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1823.0867,8.0410681,2192.6243};
-						angles[]={0,4.3952999,0};
+						position[]={1823.087,8.0411882,2192.624};
+						angles[]={0,4.3952975,0};
 					};
 					side="West";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						skill=1;
-						init="[this, this] call ace_common_fnc_claim;" \n "" \n "" \n "";
+						init="[this, this] call ace_common_fnc_claim;" \n "" \n "[this, ""General""] call misery_traders_fnc_generateShop;" \n "";
 						name="kamenka_4";
 						ignoreByDynSimulGrid=1;
 						class Inventory
@@ -10668,7 +10672,7 @@ class Mission
 					};
 					id=264;
 					type="B_Survivor_F";
-					atlOffset=2.1368766;
+					atlOffset=0.00011920929;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10720,7 +10724,7 @@ class Mission
 				dynamicSimulation=1;
 			};
 			id=263;
-			atlOffset=2.1368766;
+			atlOffset=0.00011920929;
 		};
 		class Item132
 		{
