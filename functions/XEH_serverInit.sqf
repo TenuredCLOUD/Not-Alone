@@ -1,6 +1,3 @@
-
-
-
 private _dangerousZones = ["marker_151", "marker_154", "marker_172"];
 
 [{

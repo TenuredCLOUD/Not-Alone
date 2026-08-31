@@ -55,7 +55,7 @@ class CfgGradFortifications {
          size = 3;	//dependent on actual object size	Number - The size that this fortification takes up in the virtual inventory.
          condition	= "true";	//String - Custom condition that will be evaluated during placement. Arguments passed are [fortification object, unit that is placing].
          conditionHint	= "CAN'T PLACE!";	//String - Status that will be displayed in GUI when fotification can not be placed because of custom condition.
-
+         emptyWhenPlaced = 1;
        };
        class VirtualReammoBox_camonet_F {
          canCollide = 1;	//(1/0) - Can this fortification be placed while colliding with other objects?
@@ -73,7 +73,7 @@ class CfgGradFortifications {
          size = 3;	//dependent on actual object size	Number - The size that this fortification takes up in the virtual inventory.
          condition	= "true";	//String - Custom condition that will be evaluated during placement. Arguments passed are [fortification object, unit that is placing].
          conditionHint	= "CAN'T PLACE!";	//String - Status that will be displayed in GUI when fotification can not be placed because of custom condition.
-
+         emptyWhenPlaced = 1;
        };
        class Box_NATO_Ammo_F {
          canCollide = 1;	//(1/0) - Can this fortification be placed while colliding with other objects?
@@ -91,6 +91,7 @@ class CfgGradFortifications {
          size = 3;	//dependent on actual object size	Number - The size that this fortification takes up in the virtual inventory.
          condition	= "true";	//String - Custom condition that will be evaluated during placement. Arguments passed are [fortification object, unit that is placing].
          conditionHint	= "CAN'T PLACE!";	//String - Status that will be displayed in GUI when fotification can not be placed because of custom condition.
+         emptyWhenPlaced = 1;
        };
        class Flag_NATO_F {
          canCollide = 1;	//(1/0) - Can this fortification be placed while colliding with other objects?
@@ -250,23 +251,6 @@ class CfgGradFortifications {
         boundingBoxOffset =	[0,0,0];	//Array - Offset for bounding box, vector [x,y,z].
         buildTime	= 10;//dependent on actual object size	Number - Sets building time in seconds for this type of fortification. Is affected by buildTimeFactor.
         demolitionTime = 15;	//dependent on actual object size	Number - Sets demolishing time in seconds for this type of fortification. Is affected by demolishTimeFactor.
-        packUpTime = 20;	//dependent on actual object size	Number - Sets pack up time in seconds for this type of fortification. Is affected by packUpTimeFactor.
-        size = 3;	//dependent on actual object size	Number - The size that this fortification takes up in the virtual inventory.
-        condition	= "true";	//String - Custom condition that will be evaluated during placement. Arguments passed are [fortification object, unit that is placing].
-        conditionHint	= "CAN'T PLACE!";	//String - Status that will be displayed in GUI when fotification can not be placed because of custom condition.
-    };
-    class Land_PortableDesk_01_olive_F {
-        canCollide = 1;	//(1/0) - Can this fortification be placed while colliding with other objects?
-        canDemolish =	1;	//(1/0) - Can this fortification be demolished?
-        canPackUp	= 1;	//(1/0) - Can this fortification be packed up and reused?
-        canFloat = 1;	//(1/0) - Can this fortification be placed while floating?
-        canPlaceOnRoad = 1;	//(1/0) - Can this fortification be placed on roads?
-        surfaceNormal = 1;	//(1/0) - Default setting for surface normal up-vector.
-        surfaceNormalForced = 0;	//(1/0) - If forced, user will be unable to change from default setting.
-        boundingBoxSizeFactor	= 1;	//Number - Size factor of bounding box for this fortification - smaller means collision detection is less strict - is factored into global boundingBoxSize
-        boundingBoxOffset =	[0,0,0];	//Array - Offset for bounding box, vector [x,y,z].
-        buildTime	= 15;//dependent on actual object size	Number - Sets building time in seconds for this type of fortification. Is affected by buildTimeFactor.
-        demolitionTime = 35;	//dependent on actual object size	Number - Sets demolishing time in seconds for this type of fortification. Is affected by demolishTimeFactor.
         packUpTime = 20;	//dependent on actual object size	Number - Sets pack up time in seconds for this type of fortification. Is affected by packUpTimeFactor.
         size = 3;	//dependent on actual object size	Number - The size that this fortification takes up in the virtual inventory.
         condition	= "true";	//String - Custom condition that will be evaluated during placement. Arguments passed are [fortification object, unit that is placing].
@@ -706,7 +690,7 @@ class CfgGradFortifications {
     conditionHint	= "CAN'T PLACE!";	//String - Status that will be displayed in GUI when fotification can not be placed because of custom condition.
   };
 
-  class CUP_radio_b {
+  class Land_FMradio_F {
     canCollide = 1;	//(1/0) - Can this fortification be placed while colliding with other objects?
     canDemolish =	1;	//(1/0) - Can this fortification be demolished?
     canPackUp	= 1;	//(1/0) - Can this fortification be packed up and reused?

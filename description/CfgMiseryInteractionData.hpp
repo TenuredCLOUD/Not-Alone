@@ -890,4 +890,25 @@ class CfgMisery_InteractionData {
         code = "[] call misery_temperature_fnc_coldPack"; // Raw SQF override (optional)
         feedback[] = {};
     };
+    // Research
+    class misery_leadContainer_Closed { // Item classname
+        category = "$STR_TheBurningRain_Category_Tools"; // Category of item
+        delay = 0; // Delay before processing
+        hunger = 0; // Affects MiseryHunger
+        thirst = 0; // Affects MiseryThirst
+        energyDeficit = 0; // Affects energyDeficit (sleepiness)
+        exposure = 0; // Affects exposure
+        radiation = 0; // Affects radiation
+        infection = 0; // Affects infection
+        parasites = 0; // Affects parasites
+        toxicity = 0; // Affects toxicity
+        psychosis = 0; // Affects psychosis
+        maskBlocksUse = 0; // Requires gas mask (1 blocks without)
+        requiresCanOpener = 0; // Requires can opener/tool
+        removeOnUse = 0; // Remove item after use
+        sound = ""; // Sound to play
+        animation = "";
+        code = "['misery_leadContainer_Closed', 'misery_leadContainer_Open'] call misery_common_fnc_itemDecrement; [ACE_player, 'misery_fallout_glass', true] call CBA_fnc_addItem;"; // Raw SQF override (optional)
+        feedback[] = {"You remove an artifact from containment..."};
+    };
 };

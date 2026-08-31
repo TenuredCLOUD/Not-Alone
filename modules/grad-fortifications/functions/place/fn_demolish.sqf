@@ -16,17 +16,10 @@ _onComplete = {
     _args params ["_fort","_unit"];
     [_unit] call grad_fortifications_fnc_stopAnimation;
     deleteVehicle _fort;
-    
-    _todelete = [];
-		private _randomPosAroundPlayer1 = [[[position player, 0.5]], []] call BIS_fnc_randomPos;
-
-		_scrap1 = "GroundWeaponHolder" createVehicle _randomPosAroundPlayer1;
-		_scrap1 addItemCargoGlobal ["TCRP_Buildscrap", 1];
-		_todelete append [_scrap1];
 };
 _onCancel = {
     _args = _this select 0;
     _args params ["_fort","_unit"];
     [_unit] call grad_fortifications_fnc_stopAnimation;
 };
-[_demolitionTime, [_fort,_unit], _onComplete, _onCancel, "Demolishing..."] call ace_common_fnc_progressBar;
+[_demolitionTime, [_fort,_unit], _onComplete, _onCancel, localize "$STR_gruppe_adler_fortifications_aceprogress_demolish"] call ace_common_fnc_progressBar;

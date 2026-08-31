@@ -18,7 +18,7 @@ class CfgMisery_CraftingData {
         requiredXP = 0;
     };
     class WBK_axe {
-        requiredItems[] = {{"misery_woodplank", 1, 1}, {"misery_ironIngot", 2, 1}, {"misery_anvilHammer", 1, 0}, {"misery_metalFabricationKit", 1, 0}, {"Toolkit", 1, 0}};
+        requiredItems[] = {{"misery_woodplank", 1, 1}, {"misery_ironIngot", 2, 1}, {"WBK_SmallHammer", 1, 0}, {"misery_metalFabricationKit", 1, 0}, {"Toolkit", 1, 0}};
         craftingTime = 30;
         outputCount = 1;
         code = "[misery_metalFabricationKit, misery_emptyToolKit] call misery_common_fnc_itemDecrement";
@@ -27,7 +27,7 @@ class CfgMisery_CraftingData {
         requiredXP = 0;
     };
     class Axe {
-        requiredItems[] = {{"misery_woodplank", 1, 1}, {"misery_ironIngot", 1, 1}, {"misery_anvilHammer", 1, 0}, {"misery_metalFabricationKit", 1, 0}, {"Toolkit", 1, 0}};
+        requiredItems[] = {{"misery_woodplank", 1, 1}, {"misery_ironIngot", 1, 1}, {"WBK_SmallHammer", 1, 0}, {"misery_metalFabricationKit", 1, 0}, {"Toolkit", 1, 0}};
         craftingTime = 30;
         outputCount = 1;
         code = "['misery_metalFabricationKit', 'misery_emptyToolKit'] call misery_common_fnc_itemDecrement";
@@ -36,7 +36,7 @@ class CfgMisery_CraftingData {
         requiredXP = 0;
     };
     class WBK_brush_axe {
-        requiredItems[] = {{"misery_woodplank", 1, 1}, {"misery_ironIngot", 4, 1}, {"misery_anvilHammer", 1, 0}, {"misery_metalFabricationKit", 1, 0}, {"Toolkit", 1, 0}};
+        requiredItems[] = {{"misery_woodplank", 1, 1}, {"misery_ironIngot", 4, 1}, {"WBK_SmallHammer", 1, 0}, {"misery_metalFabricationKit", 1, 0}, {"Toolkit", 1, 0}};
         craftingTime = 30;
         outputCount = 1;
         code = "['misery_metalFabricationKit', 'misery_emptyToolKit'] call misery_common_fnc_itemDecrement";
@@ -71,8 +71,8 @@ class CfgMisery_CraftingData {
         outputXP = 5;
         requiredXP = 0;
     };
-    class misery_pickaxe {
-        requiredItems[] = {{"misery_woodplank", 1, 1}, {"misery_pickaxeHead", 1, 1}, {"misery_anvilHammer", 1, 0}};
+    class WBK_Pickaxe {
+        requiredItems[] = {{"misery_woodplank", 1, 1}, {"misery_pickaxeHead", 1, 1}, {"WBK_SmallHammer", 1, 0}};
         craftingTime = 30;
         outputCount = 1;
         code = "";

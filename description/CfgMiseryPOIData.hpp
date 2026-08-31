@@ -9,7 +9,7 @@ class CfgMisery_POI {
                 "CUP_BOX_ChDKZ_Ammo_F",{-5.42188, 2.84375, -0.0594368},127.895
             };
             position[] = {0, 0, 0};
-            nearShore = 1;
+            nearShore = 0;
             groundLoot = 1;
             faction = "SIDEWEST";
             aiClass = "CUP_B_CDF_Soldier_MNT";
@@ -2166,10 +2166,10 @@ class CfgMisery_POI {
             crateLootCount = 5;
             groundLootItems[] = {"FirstAidKit"};
             groundLootCount = 3;
-            aiAccuracy = 0.25;
-            aiShake = 0.25;
-            aiSpeed = 0.25;
-            spawnChance = 40;
+            aiAccuracy = 0.4;
+            aiShake = 0.15;
+            aiSpeed = 0.5;
+            spawnChance = 45;
         };
         class Campground_2 {
             composition[] = {
@@ -4339,69 +4339,9 @@ class CfgMisery_POI {
             aiAccuracy = 0.25;
             aiShake = 0.25;
             aiSpeed = 0.25;
-            spawnChance = 40;
+            spawnChance = 45;
         };
-
-        // Raid
-
-        class Raid_1 {
-            composition[] = {
-                "CampEast_EP1",{0, 0, 0},41.9415,
-                "FlagCarrierINS",{-2.21875, -7.5354, 0.0224514},0,
-                "CamoNet_INDP_F",{-5.12109, -15.8452, 0.133723},136.732,
-                "Campfire_burning_F",{-6.75781, -7.61011, 0.0342431},0,
-                "CUP_BOX_ChDKZ_Wps_F",{-2.95313, -12.908, 0.0796278},213.356,
-                "CUP_BOX_ChDKZ_AmmoOrd_F",{-5.42969, -15.4563, 0.135842},191.066,
-                "CUP_BOX_ChDKZ_Wps_F",{-7.8457, -17.3262, 0.181215},302.494,
-                "Land_Sleeping_bag_F",{-2.65137, -1.09961, 0.025965},313.399,
-                "Land_Sleeping_bag_F",{-1.5625, 0.0842285, 0.0286252},313.399,
-                "Land_Sleeping_bag_F",{-0.484375, 1.2937, 0.0311601},313.399,
-                "Land_Sleeping_bag_F",{0.75, 2.5813, 0.0343206},313.399,
-                "Land_Sleeping_bag_F",{2.75879, 0.804932, 0.0560656},132.972,
-                "Land_Sleeping_bag_F",{1.47461, -0.46875, 0.0525985},133.355,
-                "Land_Sleeping_bag_F",{0.272461, -1.71802, 0.0495062},133.511,
-                "Land_Sleeping_bag_F",{-0.857422, -2.93652, 0.0467064},134.499,
-                "Land_CampingChair_V1_folded_F",{-4.62695, -2.01855, -0.00910211},222.92,
-                "Land_CampingChair_V1_F",{-8.23633, -6.18335, 0.0335109},313.339,
-                "Land_CampingChair_V1_F",{-8.4668, -7.99414, 0.0558219},257.934
-            };
-            position[] = {4243.73,9129.91,0};
-            nearShore = 0;
-            groundLoot = 1;
-            faction = "SIDEEAST";
-            aiClass = "CUP_O_INS_Soldier";
-            aiCountMax = 8;
-            aiCountMin = 8;
-            aiSpawnDistance = 50;
-            aiWeapPrimaryLoot[] = {"CUP_arifle_AS_VAL_VFG"};
-            aiWeapSecondaryLoot[] = {"CUP_hgun_M17_Green"};
-            aiWeapLauncherLoot[] = {"CUP_launch_RPG7V"};
-            aiAmmo = 5;
-            aiItemLoot[] = {"FirstAidKit", "ItemMap", "ItemCompass"};
-            aiNVGLoot[] = {"CUP_NVG_GPNVG_green_WP"};
-            aiFacewearLoot[] = {"CUP_G_RUS_Ratnik_Balaclava_EMR_Summer_1"};
-            aiHeadgearLoot[] = {"CUP_H_RUS_6B47_SF_headset"};
-            aiUniformLoot[] = {"CUP_U_O_RUS_Soldier_VKPO_Jacket_Winter_2"};
-            aiVestLoot[] = {"CUP_V_O_RUS_6B45_1_SPP_AK_Summer"};
-            aiBackpackLoot[] = {"CUP_B_RUS_Raid_bag_Summer"};
-            crateWeaponLoot[] = {"CUP_arifle_AS_VAL_VFG"};
-            crateWeaponMagLoot = "ALL";
-            crateWeaponAttachmentLoot = "ALL";
-            crateItemLoot[] = {"FirstAidKit", "ItemMap"};
-            crateUniformLoot[] = {"U_B_CombatUniform_mcam"};
-            crateVestLoot[] = {"V_PlateCarrier1_rgr"};
-            crateBackpackLoot[] = {"B_AssaultPack_mcamo"};
-            crateLootCount = 10;
-            groundLootItems[] = {};
-            groundLootCount = 0;
-            aiAccuracy = 0.3;
-            aiShake = 0.3;
-            aiSpeed = 0.3;
-            spawnChance = 25;
-        };
-
         // Heli Wrecks
-
         class MH47EWreck_1 {
             composition[] = {
                 "CUP_MH47E_Wreck2",{0, 0, 0},0,
@@ -26148,7 +26088,7 @@ class CfgMisery_POI {
                 "misery_spareTire"
             };
             groundLootCount = 3;
-            spawnChance = 35;
+            spawnChance = 40;
         };
     };
 };

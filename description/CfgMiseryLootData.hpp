@@ -12,9 +12,9 @@ class CfgMisery_LootData {
         itemsFood[] = {"misery_coffeegrounds","misery_coffeemug","misery_wolfbeer","misery_vodka","misery_cigar","misery_cigarettepack"};
         itemsFoodM[] = {"ACE_MRE_LambCurry","ACE_MRE_CreamTomatoSoup","ACE_MRE_CreamChickenSoup","ACE_MRE_ChickenHerbDumplings","ACE_MRE_ChickenTikkaMasala","ACE_Humanitarian_Ration","misery_energyDrink","misery_vodkafull","misery_cocaine"};
         itemsMedical[] = {"misery_antibioticpill","misery_painpill","misery_Cenestin","misery_sleeppill","misery_randommedication","ACE_fieldDressing","ACE_splint","ACE_elasticBandage"};
-        itemsMedicalM[] = {"misery_antibiotic","misery_antiparasitic","misery_caffetin","misery_pain","misery_Clozapine","misery_Cenestinbottle","misery_ThrombomodulinStimpack","misery_glucose","misery_electrolyte","ACE_morphine","ACE_epinephrine","ACE_bloodIV_500","ACE_surgicalKit"};
+        itemsMedicalM[] = {"misery_antibiotic","misery_antiparasitic","misery_caffetin","misery_pain","misery_Clozapine","misery_Cenestinbottle","misery_ThrombomodulinStimpack","misery_glucose","misery_electrolyte","ACE_morphine","ACE_epinephrine","ACE_bloodIV_500","ACE_surgicalKit","ACE_suture"};
         itemsMisc[] = {"ACE_rope6","ACE_rope12","misery_CoppWire","misery_Needlethread","misery_pliers","misery_Fscrewdriver","CUP_item_KitchenKnife","CUP_item_Flashlight","misery_Ducttape"};
-        itemsMiscM[] = {"misery_RFHighNobattery","misery_pliers","misery_Pscrewdriver","misery_Ducttape","CUP_item_Money","CUP_item_Flashlight_ASIL","CUP_item_Geiger"};
+        itemsMiscM[] = {"misery_RFHighNobattery","misery_pliers","misery_Pscrewdriver","misery_Ducttape","CUP_item_Flashlight_ASIL","CUP_item_Geiger"};
         backpacks[] = {"CUP_B_CivPack_WDL","B_OutdoorPack_blu","B_OutdoorPack_tan","CUP_B_AlicePack_Bedroll","CUP_B_AssaultPack_White"};
         backpacksM[] = {"CUP_B_Bergen_BAF_Winter","CUP_B_USPack_White","CUP_B_Backpack_SpecOps_Winter","CUP_B_USMC_Assault_WDL","CUP_B_Motherlode_MTP","CUP_B_SLA_Backpack"};
         special[] = {};
@@ -55,7 +55,6 @@ class CfgMisery_LootData {
             "CUP_U_B_BDUv2_roll_gloves_dirty_tpattern"
         };
         vests[] = {
-            "CUP_V_O_SLA_6B3_1_WDL",
             "CUP_V_CDF_officerbelt",
             "v_chestrig_oli",
             "cup_v_i_racs_carrier_wdl_2",
@@ -63,11 +62,6 @@ class CfgMisery_LootData {
             "cup_v_rus_smersh_2",
             "cup_v_oi_tiki_jacket1_06",
             "cup_v_oi_tiki_jacket1_04",
-            "CUP_V_CDF_6B3_4_SNW",
-            "CUP_V_CDF_6B3_3_SNW",
-            "CUP_V_CDF_6B3_5_SNW",
-            "CUP_V_CDF_6B3_2_SNW",
-            "CUP_V_CDF_6B3_1_SNW"
         };
         vestsItemChance = 75;
         vestsM[] = {"CUP_V_B_PASGT_winter","CUP_V_B_GER_Carrier_Rig_Winter","CUP_V_O_SLA_Carrier_Belt03","CUP_V_I_GUE_ArmoredVest_01","CUP_V_B_RRV_WDL","CUP_V_RUS_6B3_1"};
@@ -78,10 +72,7 @@ class CfgMisery_LootData {
             "WBK_BrassKnuckles",
             "WBK_brush_axe",
             "Crowbar",
-            "CrudeAxe",
-            "FireAxe",
             "WBK_survival_weapon_2",
-            "WBK_survival_weapon_1",
             "IceAxe",
             "WBK_pipeStyledSword",
             "Rod",
@@ -92,11 +83,9 @@ class CfgMisery_LootData {
             "WBK_survival_weapon_3",
             "WBK_survival_weapon_4_r",
             "WBK_survival_weapon_4",
-            "UNSC_Knife_reveresed",
+            "UNSC_Knife_reversed",
             "UNSC_Knife",
             "WBK_ww1_Club",
-            "Shovel_Russian_Rotated",
-            "Shovel_Russian",
             "Sashka_Russian",
             "Police_Bat",
             "Knife_m3",
